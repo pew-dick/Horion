@@ -1,7 +1,7 @@
 #include "Jetpack.h"
 
-Jetpack::Jetpack() : IModule('F', Category::MOVEMENT, "Fly around like you had a Jetpack!") {
-	registerFloatSetting("speed", &this->speedMod, 1, 0.2f, 3.f);
+Jetpack::Jetpack() : IModule('F', Category::MOVEMENT, "Fly around like you had a Jetpack! (Speed 6 is doube the old speed!)") {
+	registerFloatSetting("speed", &this->speedMod, 1, 0.2f, 3.f, 6.f);
 	this->registerBoolSetting("Bypass", &this->isBypass, this->isBypass);
 }
 
